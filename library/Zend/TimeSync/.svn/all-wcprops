@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/gplstagesdis35/!svn/ver/277/library/Zend/TimeSync
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/gplstagesdis35/!svn/ver/277/library/Zend/TimeSync/Exception.php
+END
+Ntp.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/gplstagesdis35/!svn/ver/277/library/Zend/TimeSync/Ntp.php
+END
+Protocol.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/gplstagesdis35/!svn/ver/277/library/Zend/TimeSync/Protocol.php
+END
+Sntp.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/gplstagesdis35/!svn/ver/277/library/Zend/TimeSync/Sntp.php
+END

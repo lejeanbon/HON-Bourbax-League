@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/gplstagesdis35/!svn/ver/277/library/Zend/Tool/Framework/Metadata
+END
+Tool.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/gplstagesdis35/!svn/ver/277/library/Zend/Tool/Framework/Metadata/Tool.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/gplstagesdis35/!svn/ver/277/library/Zend/Tool/Framework/Metadata/Interface.php
+END
+Basic.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/gplstagesdis35/!svn/ver/277/library/Zend/Tool/Framework/Metadata/Basic.php
+END
+Attributable.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/gplstagesdis35/!svn/ver/277/library/Zend/Tool/Framework/Metadata/Attributable.php
+END
+Dynamic.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/gplstagesdis35/!svn/ver/277/library/Zend/Tool/Framework/Metadata/Dynamic.php
+END

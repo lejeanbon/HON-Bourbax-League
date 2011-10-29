@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall
+END
+CommitConferenceRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/CommitConferenceRequest.php
+END
+RemoveConferenceTemplateParticipantRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/RemoveConferenceTemplateParticipantRequest.php
+END
+UpdateParticipantRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/UpdateParticipantRequest.php
+END
+RemoveConferenceTemplateRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/RemoveConferenceTemplateRequest.php
+END
+GetParticipantStatusRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/GetParticipantStatusRequest.php
+END
+RemoveConferenceRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/RemoveConferenceRequest.php
+END
+CreateConferenceTemplateRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/CreateConferenceTemplateRequest.php
+END
+NewParticipantRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/NewParticipantRequest.php
+END
+CreateConferenceRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/CreateConferenceRequest.php
+END
+RemoveParticipantRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/RemoveParticipantRequest.php
+END
+GetConferenceTemplateListRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/GetConferenceTemplateListRequest.php
+END
+GetConferenceTemplateParticipantRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/GetConferenceTemplateParticipantRequest.php
+END
+GetConferenceListRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/GetConferenceListRequest.php
+END
+GetConferenceTemplateRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/GetConferenceTemplateRequest.php
+END
+UpdateConferenceTemplateParticipantRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/UpdateConferenceTemplateParticipantRequest.php
+END
+UpdateConferenceTemplateRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/UpdateConferenceTemplateRequest.php
+END
+GetRunningConferenceRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/GetRunningConferenceRequest.php
+END
+UpdateConferenceRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/UpdateConferenceRequest.php
+END
+GetConferenceStatusRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/GetConferenceStatusRequest.php
+END
+AddConferenceTemplateParticipantRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Request/ConferenceCall/AddConferenceTemplateParticipantRequest.php
+END

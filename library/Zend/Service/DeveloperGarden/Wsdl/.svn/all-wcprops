@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl
+END
+ODGBaseUserService.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/ODGBaseUserService.xsd
+END
+VoiceButlerService.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/VoiceButlerService.xsd
+END
+SmsValidationUserService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/SmsValidationUserService.wsdl
+END
+ccsPort.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/ccsPort.wsdl
+END
+localsearch.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/localsearch.wsdl
+END
+IPLocation.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/IPLocation.wsdl
+END
+TokenService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/TokenService.wsdl
+END
+ccsPort.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/ccsPort.xsd
+END
+SmsService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/SmsService.wsdl
+END
+ODGBaseUserService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/ODGBaseUserService.wsdl
+END
+VoiceButlerService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/VoiceButlerService.wsdl
+END
+localsearch.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/localsearch.xsd
+END
+IPLocation.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/DeveloperGarden/Wsdl/IPLocation.xsd
+END

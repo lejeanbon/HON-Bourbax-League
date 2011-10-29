@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/WindowsAzure/RetryPolicy
+END
+RetryPolicyAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/WindowsAzure/RetryPolicy/RetryPolicyAbstract.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/WindowsAzure/RetryPolicy/Exception.php
+END
+NoRetry.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/WindowsAzure/RetryPolicy/NoRetry.php
+END
+RetryN.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/gplstagesdis35/!svn/ver/277/library/Zend/Service/WindowsAzure/RetryPolicy/RetryN.php
+END
