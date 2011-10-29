@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/gplstagesdis35/!svn/ver/277/library/Zend/Amf/Value
+END
+MessageHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/gplstagesdis35/!svn/ver/277/library/Zend/Amf/Value/MessageHeader.php
+END
+ByteArray.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/gplstagesdis35/!svn/ver/277/library/Zend/Amf/Value/ByteArray.php
+END
+MessageBody.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/gplstagesdis35/!svn/ver/277/library/Zend/Amf/Value/MessageBody.php
+END
+TraitsInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/gplstagesdis35/!svn/ver/277/library/Zend/Amf/Value/TraitsInfo.php
+END

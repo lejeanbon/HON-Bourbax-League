@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/gplstagesdis35/!svn/ver/277/library/Zend/Queue/Adapter/Db
+END
+postgresql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/gplstagesdis35/!svn/ver/277/library/Zend/Queue/Adapter/Db/postgresql.sql
+END
+mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/gplstagesdis35/!svn/ver/277/library/Zend/Queue/Adapter/Db/mysql.sql
+END
+queue_sqlite.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/gplstagesdis35/!svn/ver/277/library/Zend/Queue/Adapter/Db/queue_sqlite.sql
+END
+sqlsrv.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/gplstagesdis35/!svn/ver/277/library/Zend/Queue/Adapter/Db/sqlsrv.sql
+END
+Message.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/gplstagesdis35/!svn/ver/277/library/Zend/Queue/Adapter/Db/Message.php
+END
+Queue.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/gplstagesdis35/!svn/ver/277/library/Zend/Queue/Adapter/Db/Queue.php
+END

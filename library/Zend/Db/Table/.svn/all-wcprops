@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/gplstagesdis35/!svn/ver/277/library/Zend/Db/Table
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/gplstagesdis35/!svn/ver/277/library/Zend/Db/Table/Exception.php
+END
+Select.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gplstagesdis35/!svn/ver/277/library/Zend/Db/Table/Select.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/gplstagesdis35/!svn/ver/277/library/Zend/Db/Table/Abstract.php
+END
+Rowset.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gplstagesdis35/!svn/ver/277/library/Zend/Db/Table/Rowset.php
+END
+Row.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/gplstagesdis35/!svn/ver/277/library/Zend/Db/Table/Row.php
+END
+Definition.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/gplstagesdis35/!svn/ver/277/library/Zend/Db/Table/Definition.php
+END

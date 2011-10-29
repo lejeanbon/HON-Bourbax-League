@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/gplstagesdis35/!svn/ver/277/library/Zend/InfoCard/Xml
+END
+Element.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/gplstagesdis35/!svn/ver/277/library/Zend/InfoCard/Xml/Element.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/gplstagesdis35/!svn/ver/277/library/Zend/InfoCard/Xml/Exception.php
+END
+KeyInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/gplstagesdis35/!svn/ver/277/library/Zend/InfoCard/Xml/KeyInfo.php
+END
+EncryptedKey.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/gplstagesdis35/!svn/ver/277/library/Zend/InfoCard/Xml/EncryptedKey.php
+END
+Assertion.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/gplstagesdis35/!svn/ver/277/library/Zend/InfoCard/Xml/Assertion.php
+END
+EncryptedData.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/gplstagesdis35/!svn/ver/277/library/Zend/InfoCard/Xml/EncryptedData.php
+END
+Security.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/gplstagesdis35/!svn/ver/277/library/Zend/InfoCard/Xml/Security.php
+END
+SecurityTokenReference.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/gplstagesdis35/!svn/ver/277/library/Zend/InfoCard/Xml/SecurityTokenReference.php
+END

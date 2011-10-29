@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/gplstagesdis35/!svn/ver/277/library/Zend/Http/UserAgent/Storage
+END
+NonPersistent.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/gplstagesdis35/!svn/ver/277/library/Zend/Http/UserAgent/Storage/NonPersistent.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/gplstagesdis35/!svn/ver/277/library/Zend/Http/UserAgent/Storage/Exception.php
+END
+Session.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/gplstagesdis35/!svn/ver/277/library/Zend/Http/UserAgent/Storage/Session.php
+END

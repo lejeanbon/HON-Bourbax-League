@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/gplstagesdis35/!svn/ver/277/library/Zend/Oauth
+END
+Consumer.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/gplstagesdis35/!svn/ver/277/library/Zend/Oauth/Consumer.php
+END
+Client.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/gplstagesdis35/!svn/ver/277/library/Zend/Oauth/Client.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/gplstagesdis35/!svn/ver/277/library/Zend/Oauth/Exception.php
+END
+Http.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/gplstagesdis35/!svn/ver/277/library/Zend/Oauth/Http.php
+END
+Token.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/gplstagesdis35/!svn/ver/277/library/Zend/Oauth/Token.php
+END
+Config.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/gplstagesdis35/!svn/ver/277/library/Zend/Oauth/Config.php
+END

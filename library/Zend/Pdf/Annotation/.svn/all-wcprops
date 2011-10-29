@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/gplstagesdis35/!svn/ver/277/library/Zend/Pdf/Annotation
+END
+Link.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/gplstagesdis35/!svn/ver/277/library/Zend/Pdf/Annotation/Link.php
+END
+Markup.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/gplstagesdis35/!svn/ver/277/library/Zend/Pdf/Annotation/Markup.php
+END
+Text.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/gplstagesdis35/!svn/ver/277/library/Zend/Pdf/Annotation/Text.php
+END
+FileAttachment.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/gplstagesdis35/!svn/ver/277/library/Zend/Pdf/Annotation/FileAttachment.php
+END

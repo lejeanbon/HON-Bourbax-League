@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/gplstagesdis35/!svn/ver/277/library/Zend/Cloud/DocumentService/Adapter
+END
+SimpleDb.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/gplstagesdis35/!svn/ver/277/library/Zend/Cloud/DocumentService/Adapter/SimpleDb.php
+END
+WindowsAzure.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/gplstagesdis35/!svn/ver/277/library/Zend/Cloud/DocumentService/Adapter/WindowsAzure.php
+END
+AbstractAdapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/gplstagesdis35/!svn/ver/277/library/Zend/Cloud/DocumentService/Adapter/AbstractAdapter.php
+END

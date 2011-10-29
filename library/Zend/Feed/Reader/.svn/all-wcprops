@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/gplstagesdis35/!svn/ver/277/library/Zend/Feed/Reader
+END
+Collection.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/gplstagesdis35/!svn/ver/277/library/Zend/Feed/Reader/Collection.php
+END
+FeedSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/gplstagesdis35/!svn/ver/277/library/Zend/Feed/Reader/FeedSet.php
+END
+EntryInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/gplstagesdis35/!svn/ver/277/library/Zend/Feed/Reader/EntryInterface.php
+END
+FeedInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/gplstagesdis35/!svn/ver/277/library/Zend/Feed/Reader/FeedInterface.php
+END
+EntryAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/gplstagesdis35/!svn/ver/277/library/Zend/Feed/Reader/EntryAbstract.php
+END
+FeedAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/gplstagesdis35/!svn/ver/277/library/Zend/Feed/Reader/FeedAbstract.php
+END
