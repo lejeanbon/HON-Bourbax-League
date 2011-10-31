@@ -21,7 +21,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap{
         $view = new Zend_View();
         Zend_Layout::startMvc();
         $view->doctype('XHTML1_STRICT');
-        $view->headTitle('SDIS35 - Gestion des stages/formations');
+        $view->headTitle('HON - Bourbax League');
         // Ajoutons là au ViewRenderer
         $viewRenderer = Zend_Controller_Action_HelperBroker::getStaticHelper('ViewRenderer');
         $viewRenderer->setView($view);
