@@ -1,19 +1,10 @@
 <table>
-    <tr><th>Joueur</th><th>Hero</th><th>Score</th><th></th></tr>
+    <tr><th>Joueur</th><th>Hero</th><th>Score</th><th>GPM</th><th>APM</th></tr>
 <?php
-/*foreach ($this->match_stats->ms  as $ms) {
-    echo '<tr><td>'.$ms['aid'].'</td><td>'.$ms['cli_name'].'</td>';
-    echo '<td>';
-    foreach($ms->stat as $stat){
-        if($stat['name'] == 'herokills')
-            echo $stat.'/';
-        if($stat['name'] == 'deaths')
-            echo $stat.'/';
-        if($stat['name'] == 'heroassists')
-            echo $stat.'/';
-
-    }
-    echo '</td></tr>';
-}*/
+foreach ($this->players_stats  as $id => $ps) {
+    echo '<tr><td>'.$id.'</td><td><img src="images/HeroIcons/'.$ps['hero_img'].'/icon_25.jpg" alt="'.$ps['hero'].'"/></td>';
+    echo '<td>'.$ps['herokills'].'/'.$ps['deaths'].'/'.$ps['heroassists'].'</td>';
+    echo '<td>'.$ps['gpm'].'</td><td>'.$ps['apm'].'</td></tr>';
+}
 ?>
 </table>

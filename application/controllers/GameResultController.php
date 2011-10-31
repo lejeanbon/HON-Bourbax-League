@@ -13,7 +13,8 @@ class GameResultController extends Zend_Controller_Action
         $gm = new Application_Model_GameResult("66880040");
         $gm->process();
         //echo 'id match : '.$base['mid'];
-        //$this->view->match_stats = $parser->stats->match->match_stats;
+        $this->view->game_stats = $gm->getStatsGame();
+        $this->view->players_stats = $gm->getStatsPlayers();
         
     }
 }
