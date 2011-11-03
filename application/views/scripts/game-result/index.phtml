@@ -1,10 +1,11 @@
 <table>
-    <tr><th>Joueur</th><th>Hero</th><th>Score</th><th>GPM</th><th>APM</th></tr>
+    <tr><th>Joueur</th><th>Hero</th><th>Level</th><th>Score</th><th>Creep kill</th><th>Creep denied</th><th>Xp/min</th><th>GPM</th><th>APM</th></tr>
 <?php
 foreach ($this->players_stats  as $id => $ps) {
     echo '<tr><td>'.$id.'</td><td><img src="images/HeroIcons/'.$ps['hero_img'].'/icon_25.jpg" alt="'.$ps['hero'].'"/></td>';
-    echo '<td>'.$ps['herokills'].'/'.$ps['deaths'].'/'.$ps['heroassists'].'</td>';
-    echo '<td>'.$ps['gpm'].'</td><td>'.$ps['apm'].'</td></tr>';
+    echo '<td>'.$ps['level'].'</td><td>'.$ps['herokills'].'/'.$ps['deaths'].'/'.$ps['heroassists'].'</td>';
+    echo '<td>'.$ps['creep_kill'].'</td><td>'.$ps['creep_denie'].'</td>';
+    echo '<td>'.$ps['xpm'].'</td><td>'.$ps['gpm'].'</td><td>'.$ps['apm'].'</td></tr>';
 }
 ?>
 </table>

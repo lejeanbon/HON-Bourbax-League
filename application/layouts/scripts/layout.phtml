@@ -14,12 +14,13 @@
                 <div id="connexion">
                     <div id="loginBox">
                         <?php
-                        /*if( Zend_Auth::getInstance()->hasIdentity()){
+                        if( Zend_Auth::getInstance()->hasIdentity()){
                             echo $this->loggedInAs();
                             //$identifie = App_Facade_Lecture::getInstance()->getAgent($identity->id);
                         }
                         else
-                            echo $this->loginForm($this->loginForm);*/
+                            echo $this->loginForm($this->loginForm);
+                        
                         ?>
                     </div>
                 </div>
@@ -30,8 +31,11 @@
                 </div>
                 <?php }?>
             </div>
-            <div id="menu">
+            <div>
                 <ul>
+                    <li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'news', 'action' => 'index'), 'default', true); ?>">News</a></li>
+                    <li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'gameList', 'action' => 'index'), 'default', true); ?>">Matchs</a></li>
+                    <li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'ladder', 'action' => 'index'), 'default', true); ?>">Ladder</a></li>
                 </ul>
             </div>
             <div id="content">

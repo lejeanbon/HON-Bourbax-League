@@ -53,6 +53,9 @@ class Application_Model_GameResult{
                 if($stat['name'] == 'gold'){
                     $this->game_result['player_stats']['pid_'.$id]['gpm'] = (int)($stat/($this->time/60));
                 }
+                if($stat['name'] == 'exp'){
+                    $this->game_result['player_stats']['pid_'.$id]['xpm'] = (int)($stat/($this->time/60));
+                }
                 if($stat['name'] == 'level')
                     $this->game_result['player_stats']['pid_'.$id]['level'] = (string)$stat;
                 if($stat['name'] == 'position')

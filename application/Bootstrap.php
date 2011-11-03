@@ -2,6 +2,13 @@
 
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap{
 
+    protected function _initAutoload(){
+        $moduleLoader = new Zend_Application_Module_Autoloader(array(
+        'namespace' => '',
+        'basePath' => APPLICATION_PATH));
+        return $moduleLoader;
+    }
+
     protected function _initSession(){
         $session = new Zend_Session_Namespace('sdis35', true);
         return $session;
@@ -29,15 +36,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap{
         return $view;
     }
 
-    protected function _initAutoload(){
-        $moduleLoader = new Zend_Application_Module_Autoloader(array(
-        'namespace' => '',
-        'basePath' => APPLICATION_PATH));
-        return $moduleLoader;
-    }
-
     protected  function  _initViewHelpers(){
         $this->bootstrap('layout');
+    }
+
+    protected function _initMyActionHelpers(){
+        $this->bootstrap('frontController');
+        $login = Zend_Controller_Action_HelperBroker::getStaticHelper('Login');
+        Zend_Controller_Action_HelperBroker::addHelper($login);
     }
 
 }
