@@ -18,5 +18,9 @@ class App_Facade_Ecriture {
         $this->dbRegistration = new Application_Model_DbTable_Registration();
     }
 
+    public function saveAccount(Application_Model_Account $account){
+        $this->dbAccount->save($account);
+    }
+
 }
 ?>

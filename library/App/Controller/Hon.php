@@ -13,9 +13,12 @@ class App_Controller_Hon extends Zend_Controller_Action{
      */
     public $ecriture;
 
+    public $xmlServices;
+
     public function preDispatch(){
         $this->lecture = new App_Facade_Lecture();
         $this->ecriture = new App_Facade_Ecriture();
+        $this->xmlServices = new App_Xml_XmlServices();
     }
 }
 ?>

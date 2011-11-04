@@ -1,0 +1,12 @@
+<h1>Liste des comptes HON</h1>
+<table>
+<?php
+    foreach ($this->accounts as $account){
+        echo '<tr><td>'.$account->getName().'</td></tr>';
+    }
+?>
+</table>
+<h1>Ajouter un compte</h1>
+<?php
+    echo $this->form;
+?>

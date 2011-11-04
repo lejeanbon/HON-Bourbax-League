@@ -17,6 +17,14 @@ class App_Facade_Lecture {
         $this->dbReporting = new Application_Model_DbTable_Reporting();
         $this->dbRegistration = new Application_Model_DbTable_Registration();
     }
+
+    public function getUserByName($name){
+       return $this->dbUser->getByName($name);
+    }
+
+    public function getAccountsByUser(Application_Model_User $user){
+        return $this->dbAccount->getAllByUser($user);
+    }
     
 }
 
