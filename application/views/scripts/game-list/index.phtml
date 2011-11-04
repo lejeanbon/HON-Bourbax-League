@@ -1,1 +1,24 @@
-<br /><br /><center>View script for controller <b>GameList</b> and script/action name <b>index</b></center>
+<table>
+    <tr><th>Hero</th><th>Score</th><th>XP/min</th><th>Gold/min</th><th>Actions/min</th><th></th></tr>
+    <?php
+    foreach ($this->games as $game) {
+        if($game->getResult() == 0)
+            $color = 'red';
+        else
+            $color = 'green';
+        echo '<tr style="background-color:'.$color.';">';
+        $player_stats = $game->getGameStat();
+        $account = $game->getAccount();
+        foreach($player_stats['player_stats'] as $pid => $player){
+            if($pid == 'pid_'.$account['aid']){
+                $g = $game->getGame();
+                echo '<td><img src="'.$this->baseUrl().'/images/HeroIcons/'.$player['hero_img'].'/icon_25.jpg" alt="'.$player['hero'].'"/></td>';
+                echo '<td>'.$player['herokills'].'/'.$player['deaths'].'/'.$player['heroassists'].'</td>';
+                echo '<td>'.$player['xpm'].'</td><td>'.$player['gpm'].'</td><td>'.$player['apm'].'</td>';
+                echo '<td><a href="'.$this->baseUrl().$this->url(array('controller' => 'gameResult', 'action' => 'index', 'game' => $g['id']), 'default', true).'">détail</a></td>';
+            }
+        }
+        echo '</tr>';
+    }
+    ?>
+</table>

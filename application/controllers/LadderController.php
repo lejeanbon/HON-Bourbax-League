@@ -1,16 +1,16 @@
 <?php
 
-class LadderController extends Zend_Controller_Action
-{
+class LadderController extends App_Controller_Hon{
 
-    public function init()
-    {
-        /* Initialize action controller here */
-    }
-
-    public function indexAction()
-    {
-        // action body
+    public function indexAction(){
+         $accounts = $this->lecture->getAccountsByElo();
+         $tmp = array();
+         foreach($accounts as $account){
+             $account->setVictory($this->lecture->getVictoryByAccount($account));
+             $account->setDefeat($this->lecture->getDefeatByAccount($account));
+             $tmp[] = $account;
+         }
+         $this->view->accounts = $tmp;
     }
 
 

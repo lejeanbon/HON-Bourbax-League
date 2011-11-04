@@ -25,6 +25,26 @@ class App_Facade_Lecture {
     public function getAccountsByUser(Application_Model_User $user){
         return $this->dbAccount->getAllByUser($user);
     }
+
+    public function getGamesByAccount(Application_Model_Account $account){
+        return $this->dbGameResult->getByAccount($account);
+    }
+
+    public function getGameById($id){
+        return $this->dbGame->getById($id);
+    }
+
+    public function getAccountsByElo(){
+        return $this->dbAccount->getAccountsByElo();
+    }
+
+    public function getVictoryByAccount(Application_Model_Account $account){
+        return $this->dbGameResult->getVictoryByAccount($account);
+    }
+
+    public function getDefeatByAccount(Application_Model_Account $account){
+        return $this->dbGameResult->getDefeatByAccount($account);
+    }
     
 }
 

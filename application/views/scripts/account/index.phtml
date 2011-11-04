@@ -2,7 +2,7 @@
 <table>
 <?php
     foreach ($this->accounts as $account){
-        echo '<tr><td>'.$account->getName().'</td></tr>';
+        echo '<tr><td>'.$account->getName().'</td><td><a href="account/delete/'.$account->getId().'"><img src="images/delete.png" alt="supprimer"/></a></td></tr>';
     }
 ?>
 </table>

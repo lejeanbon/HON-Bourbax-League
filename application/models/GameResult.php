@@ -2,16 +2,48 @@
 
 class Application_Model_GameResult{
 
-    private $game_result = array();
-    private $base;
-    private $time;
+    private $id;
+    private $game;
+    private $account;
+    private $result;
+    private $leave;
 
-    public function  __construct($gameId) {
-        $parser = simplexml_load_file("http://xml.heroesofnewerth.com/xml_requester.php?f=match_stats&opt=mid&mid[]=".$gameId);
-        $this->base = $parser->stats->match;
+    public function  __construct($id, $game, $account, $result, $leave) {
+        $this->id = $id;
+        $this->game = $game;
+        $this->account = $account;
+        $this->result = $result;
+        $this->leave = $leave;
     }
 
-    public function process(){
+    public function getResult(){
+        return $this->result;
+    }
+
+    public function getId(){
+        return $this->id;
+    }
+
+    public function getGame(){
+        return $this->game;
+    }
+
+    public function getAccount(){
+        return $this->account;
+    }
+
+    public function getLeave(){
+        return $this->leave;
+    }
+
+    public function getGameStat(){
+        $xml = new App_Xml_XmlServices();
+        $game = $this->getGame();
+        $gameStat = $xml->getMatchStats($game['gid']);
+        return $gameStat;
+    }
+
+    /*public function process(){
         //var_dump($this->game_result);
         $match = $this->base->match_stats;
         $summ = $this->base->summ;
@@ -70,7 +102,7 @@ class Application_Model_GameResult{
 
     public function getStatsPlayers(){
         return $this->game_result["player_stats"];
-    }
+    }*/
 
 }
 

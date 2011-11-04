@@ -1,6 +1,6 @@
 <?php
 
-class GameResultController extends Zend_Controller_Action
+class GameResultController extends App_Controller_Hon
 {
 
     public function init()
@@ -10,11 +10,12 @@ class GameResultController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        $gm = new Application_Model_GameResult("66880040");
-        $gm->process();
-        //echo 'id match : '.$base['mid'];
-        $this->view->game_stats = $gm->getStatsGame();
-        $this->view->players_stats = $gm->getStatsPlayers();
+        $gameId = $this->_request->getParam('game');
+        $game = $this->lecture->getGameById($gameId);
+        $xml = new App_Xml_XmlServices();
+        $gameStat = $xml->getMatchStats($game->getGid());
+        $this->view->game_stats = $gameStat['game_stats'];
+        $this->view->players_stats = $gameStat['player_stats'];
         
     }
 }

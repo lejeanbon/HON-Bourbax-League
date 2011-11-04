@@ -1,6 +1,6 @@
 <?php
 
-class GameListController extends Zend_Controller_Action
+class GameListController extends App_Controller_Hon
 {
 
     public function init()
@@ -10,7 +10,17 @@ class GameListController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+        $auth = Zend_Auth::getInstance();
+        $user = $this->lecture->getUserByName($auth->getIdentity()->username);
+        $accounts = $this->lecture->getAccountsByUser($user);
+        $games = array();
+        foreach ($accounts as $account) {
+            $myGames = $this->lecture->getGamesByAccount($account);
+            foreach ($myGames as $g) {
+                $games[] = $g;
+            }
+        }
+        $this->view->games = $games;
     }
 
 

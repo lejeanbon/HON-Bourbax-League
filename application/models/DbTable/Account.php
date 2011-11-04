@@ -44,5 +44,15 @@ class Application_Model_DbTable_Account extends Zend_Db_Table_Abstract
         }
     }
 
+    public function getAccountsByElo(){
+        $result = $this->fetchAll($this->select()->order('elo DESC'));
+        $entries = array();
+        foreach ($result as $row) {
+            $entries[] = new Application_Model_Account($row['id'], $row['name'], $row['aid'], $row['elo'],
+                                                       $row['user'], $row['kill'], $row['death'], $row['assist']);
+        }
+        return $entries; 
+    }
+
 }
 
