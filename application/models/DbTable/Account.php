@@ -13,6 +13,16 @@ class Application_Model_DbTable_Account extends Zend_Db_Table_Abstract
         )
     );
 
+    public function getById($id){
+        $result = $this->find($id);
+        if (0 == count($result)) {
+            return;
+        }
+        $row = $result->current();
+        return new Application_Model_Account($row->id, $row->name, $row->aid, $row->elo,
+                                             $row->user, $row->kill, $row->death, $row->assist);
+    }
+
     public function getAllByUser(Application_Model_User $user){
         $result = $this->fetchAll(array('user = ?' => $user->getId()));
         $entries = array();

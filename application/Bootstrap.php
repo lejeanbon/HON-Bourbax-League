@@ -10,7 +10,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap{
     }
 
     protected function _initSession(){
-        $session = new Zend_Session_Namespace('sdis35', true);
+        $session = new Zend_Session_Namespace('hon', true);
         return $session;
     }
 

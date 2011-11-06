@@ -1,0 +1,23 @@
+<h1><?php $first = $this->registrations[0]; echo $first->getGame()->getName(); ?></h1>
+<table>
+    <?php
+    $nbPlayers = 0;
+    $identity = Zend_Auth::getInstance()->getIdentity();
+    $identifie = App_Facade_Lecture::getInstance()->getUserById($identity->id);
+    foreach ($this->registrations as $reg) {
+        $nbPlayers++;
+        foreach($this->accountList($identifie) as $account){
+            if($account->getName() == $reg->getAccount()->getName()){
+                $desinscription = '<a href="'.$this->baseUrl().$this->url(array('controller' => 'index', 'action' => 'desinscription', 'account' => $reg->getAccount()->getId()), 'default', true).'">
+                                    <img src="'.$this->baseUrl().'/images/delete.png" alt="desinscription"/></a>';
+                break;
+            }
+            else
+                $desinscription = '';
+        }
+        echo '<tr><td>'.$reg->getAccount()->getName().'</td><td>'.$reg->getAccount()->getElo().'</td><td>'.$desinscription.'</td></tr>';
+    }
+    for($i = $nbPlayers; $i < 11; $i++)
+        echo '<tr><td>'.$this->form.'</td></tr>';
+    ?>
+</table>

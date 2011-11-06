@@ -12,5 +12,15 @@ class Application_Model_DbTable_User extends Zend_Db_Table_Abstract
                                           $result[0]['password'], $result[0]['right']);
     }
 
+    public function getById($id){
+        $result = $this->find($id);
+        if (0 == count($result)) {
+            return;
+        }
+        $row = $result->current();
+        $stage = new Application_Model_User($row->id, $row->username, $row->password, $row->right);
+        return $stage;
+    }
+
 }
 

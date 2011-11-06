@@ -3,9 +3,11 @@
     <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <?php
+        $identity = Zend_Auth::getInstance()->getIdentity();
         echo $this->headTitle();
         echo $this->headLink()->appendStylesheet('/css/style.css');
-        echo $this->headScript()->appendFile('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
+        echo $this->headScript()->appendFile('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js')
+                                ->appendFile('/js/hon.js');
     ?>
     </head>
     <body>
@@ -16,12 +18,22 @@
                         <?php
                         if( Zend_Auth::getInstance()->hasIdentity()){
                             echo $this->loggedInAs();
-                            //$identifie = App_Facade_Lecture::getInstance()->getAgent($identity->id);
+                            $identifie = App_Facade_Lecture::getInstance()->getUserById($identity->id);
                         }
                         else
                             echo $this->loginForm($this->loginForm);
                         
                         ?>
+                    </div>
+                    <div id="accountChoice">
+                        <select id="accountSelect">
+                            <?php
+                            $accounts = $this->accountList($identifie);
+                            foreach ($accounts as $account) {
+                                echo '<option value="'.$account->getId().'">'.$account->getName().'</option>';
+                            }
+                            ?>
+                        </select>
                     </div>
                 </div>
                 <?php if( !Zend_Auth::getInstance()->hasIdentity()){ ?>

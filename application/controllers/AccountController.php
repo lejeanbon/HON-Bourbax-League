@@ -17,7 +17,7 @@ class AccountController extends App_Controller_Hon{
                     $form->getElement("name")->addError("Nom de compte inexistant");
                 else{
                     $this->ecriture->saveAccount (new Application_Model_Account (null, $account, $id, 1500, $user->getId(), 0, 0, 0));
-                   $this->_redirect('account');
+                    $this->_redirect('account');
                 }
             }
         }

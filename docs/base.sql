@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Serveur: localhost
--- Généré le : Ven 04 Novembre 2011 à 17:57
+-- Généré le : Dim 06 Novembre 2011 à 15:06
 -- Version du serveur: 5.1.36
 -- Version de PHP: 5.3.0
 
@@ -51,11 +51,11 @@ INSERT INTO `account` (`id`, `name`, `aid`, `elo`, `user`, `kill`, `death`, `ass
 
 CREATE TABLE IF NOT EXISTS `game` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
-  `gid` int(20) NOT NULL,
+  `gid` int(20) DEFAULT NULL,
   `name` varchar(200) NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Contenu de la table `game`
@@ -66,7 +66,8 @@ INSERT INTO `game` (`id`, `gid`, `name`, `status`) VALUES
 (3, 64817775, 'SoY vs Zeal', 2),
 (4, 64285982, 'IH', 2),
 (5, 64282399, 'IH 2', 2),
-(6, 64314318, 'Une Loose :(', 2);
+(6, 64314318, 'Une Loose :(', 2),
+(8, NULL, 'Game d''inscription', 0);
 
 -- --------------------------------------------------------
 
@@ -106,16 +107,18 @@ INSERT INTO `game_result` (`id`, `game`, `account`, `result`, `leave`) VALUES
 CREATE TABLE IF NOT EXISTS `registration` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `game` int(11) NOT NULL,
-  `user` int(11) NOT NULL,
+  `account` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `game` (`game`),
-  KEY `user` (`user`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  KEY `account` (`account`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Contenu de la table `registration`
 --
 
+INSERT INTO `registration` (`id`, `game`, `account`) VALUES
+(1, 8, 1);
 
 -- --------------------------------------------------------
 
@@ -182,8 +185,8 @@ ALTER TABLE `game_result`
 -- Contraintes pour la table `registration`
 --
 ALTER TABLE `registration`
-  ADD CONSTRAINT `registration_ibfk_1` FOREIGN KEY (`game`) REFERENCES `game` (`id`),
-  ADD CONSTRAINT `registration_ibfk_2` FOREIGN KEY (`user`) REFERENCES `user` (`id`);
+  ADD CONSTRAINT `registration_ibfk_2` FOREIGN KEY (`account`) REFERENCES `account` (`id`),
+  ADD CONSTRAINT `registration_ibfk_1` FOREIGN KEY (`game`) REFERENCES `game` (`id`);
 
 --
 -- Contraintes pour la table `reporting`

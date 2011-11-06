@@ -2,6 +2,7 @@
 
 class App_Facade_Lecture {
 
+    private static $instance;
     private $dbUser;
     private $dbAccount;
     private $dbGame;
@@ -18,8 +19,19 @@ class App_Facade_Lecture {
         $this->dbRegistration = new Application_Model_DbTable_Registration();
     }
 
+    public static function getInstance(){
+        if ( !isset(self::$instance) ) {
+            self::$instance = new App_Facade_Lecture();
+        }
+        return self::$instance;
+    }
+
     public function getUserByName($name){
        return $this->dbUser->getByName($name);
+    }
+
+    public function getUserById($id){
+        return $this->dbUser->getById($id);
     }
 
     public function getAccountsByUser(Application_Model_User $user){
@@ -44,6 +56,17 @@ class App_Facade_Lecture {
 
     public function getDefeatByAccount(Application_Model_Account $account){
         return $this->dbGameResult->getDefeatByAccount($account);
+    }
+
+    public function getAllRegistration(){
+        $registrations = $this->dbRegistration->getAll();
+        $return = array();
+        foreach ($registrations as $reg){
+            $reg->setAccount($this->dbAccount->getById($reg->getAccount()));
+            $reg->setGame($this->dbGame->getById($reg->getGame()));
+            $return[] = $reg;
+        }
+        return $return;
     }
     
 }
