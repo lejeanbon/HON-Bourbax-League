@@ -26,11 +26,16 @@
                         ?>
                     </div>
                     <div id="accountChoice">
+                        Connecté en tant que :
                         <select id="accountSelect">
                             <?php
                             $accounts = $this->accountList($identifie);
                             foreach ($accounts as $account) {
-                                echo '<option value="'.$account->getId().'">'.$account->getName().'</option>';
+                                
+                                if(Zend_Registry::get('Session')->account == $account->getId())
+                                    echo '<option selected="selected" value="'.$account->getId().'">'.$account->getName().'</option>';
+                                else
+                                    echo '<option value="'.$account->getId().'">'.$account->getName().'</option>';
                             }
                             ?>
                         </select>

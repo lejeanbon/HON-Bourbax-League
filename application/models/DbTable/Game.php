@@ -14,5 +14,11 @@ class Application_Model_DbTable_Game extends Zend_Db_Table_Abstract{
         return new Application_Model_Game($row->id, $row->gid, $row->name, $row->status);
     }
 
+    public function getInscriptionGame(){
+        $games = $this->fetchAll(array('gid is null'));
+        $row = $games->current();
+        return new Application_Model_Game($row->id, $row->gid, $row->name, $row->status);;
+    }
+
 }
 

@@ -68,6 +68,14 @@ class App_Facade_Lecture {
         }
         return $return;
     }
+
+    public function isUserRegisted(Application_Model_User $user){
+        return $this->dbRegistration->isUserRegisted($user);
+    }
+
+    public function getInscriptionGame(){
+        return $this->dbGame->getInscriptionGame();
+    }
     
 }
 

@@ -1,11 +1,22 @@
 <table>
-    <tr><th>Joueur</th><th>Hero</th><th>Level</th><th>Score</th><th>Creep kill</th><th>Creep denied</th><th>Xp/min</th><th>GPM</th><th>APM</th></tr>
+    <tr><th>Joueur</th><th>Hero</th><th>Level</th><th>Score</th><th>Creep kill</th><th>Creep denied</th><th>Xp/min</th><th>GPM</th><th>APM</th><th>Items</th></tr>
 <?php
 foreach ($this->players_stats  as $id => $ps) {
-    echo '<tr><td>'.$id.'</td><td><img src="'.$this->baseUrl().'/images/HeroIcons/'.$ps['hero_img'].'/icon_25.jpg" alt="'.$ps['hero'].'"/></td>';
+    echo '<tr><td>'.$ps['id'].'</td><td><img src="'.$this->baseUrl().'/images/HeroIcons/'.$ps['hero_img'].'/icon_25.jpg" alt="'.$ps['hero'].'"/></td>';
     echo '<td>'.$ps['level'].'</td><td>'.$ps['herokills'].'/'.$ps['deaths'].'/'.$ps['heroassists'].'</td>';
     echo '<td>'.$ps['creep_kill'].'</td><td>'.$ps['creep_denie'].'</td>';
-    echo '<td>'.$ps['xpm'].'</td><td>'.$ps['gpm'].'</td><td>'.$ps['apm'].'</td></tr>';
+    echo '<td>'.$ps['xpm'].'</td><td>'.$ps['gpm'].'</td><td>'.$ps['apm'].'</td>';
+
+    echo '<td id="item_'.$ps['id'].'">
+            <img width="40" src="http://www.heroesofnewerth.com/images/items/empty_pack.jpg">
+            <img width="40" src="http://www.heroesofnewerth.com/images/items/empty_pack.jpg">
+            <img width="40" src="http://www.heroesofnewerth.com/images/items/empty_pack.jpg">
+            <img width="40" src="http://www.heroesofnewerth.com/images/items/empty_pack.jpg">
+            <img width="40" src="http://www.heroesofnewerth.com/images/items/empty_pack.jpg">
+            <img width="40" src="http://www.heroesofnewerth.com/images/items/empty_pack.jpg">
+          </td>';
+    echo '</tr>';
+    echo '<script type="text/javascript">getItems("'.$ps['id'].'", "'.$this->game_id.'");</script>';
 }
 ?>
 </table>
