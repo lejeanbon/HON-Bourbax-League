@@ -12,8 +12,8 @@
 */
 root { display: block;}
 html, body, h1, h2, h3, h4, ul, li { margin: 0; padding: 0; }
-html {background: url(../images/bg-body.jpg) no-repeat #000;}
-body { background: url(../images/bg-body.jpg) no-repeat #000; text-align: center; font-family:Tahoma, Geneva, sans-serif; 	 }
+html {background: url(../images/bg-body.jpg) repeat-x #0C0C0C;}
+body { background: url(../images/bg-body.jpg) repeat-x #0C0C0C; text-align: center; font-family:Tahoma, Geneva, sans-serif; 	 }
 li { list-style: none; line-height: 1.5em; }
 p { margin: 0 auto; line-height: 1.5em; color:#000; font-size:14px; }
 p.strong {font-weight:bold; color:#5A493F;}
@@ -31,9 +31,13 @@ p.underline { text-decoration:underline; }
 	#loginBox{ float:left; margin:5px 10px;}
 	#accountChoice{float:left; margin:5px 10px; }
 
-#global-top { width:95%; margin:0 auto; padding:100px 0px 0px;  }
-#global-top #left-bub {width:289px; float:left; height:385px; background:url(../images/left-bub.png) no-repeat;}
-#global-top #right-bub {width:289px; float:right; height:385px; background:url(../images/right-bub.png) no-repeat;}
+#global-top {  width:95%; margin:0 auto; padding:70px 0px 0px;  }
+#global-top #left-bub {width:289px; float:left; margin-top:30px; height:385px; background:url(../images/left-bub.png) no-repeat;}
+
+#mid-global-top {float:left; height:416px; width:931px; background:url(../images/bg-global-top.png) no-repeat; }
+#mid-global-top h1{ width:393px; text-indent:-9999px; height:360px; background:url(../images/logo.png) no-repeat; margin:0 auto; }
+
+#global-top #right-bub {width:289px; float:right; height:385px; margin-top:30px; background:url(../images/right-bub.png) no-repeat;}
 	
 #global { width:960px; margin:0 auto;}
 #content-top { width:961px; height:68px; background:url(../images/bg-content-top.png) no-repeat; position:relative;}
