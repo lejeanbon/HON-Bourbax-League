@@ -10,8 +10,35 @@
    TODO customize this sample style
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
+root { display: block;}
+html, body, h1, h2, h3, h4, ul, li { margin: 0; padding: 0; }
+html {background: url(../images/bg-body.jpg) no-repeat #000;}
+body { background: url(../images/bg-body.jpg) no-repeat #000; text-align: center; font-family:Tahoma, Geneva, sans-serif; 	 }
+li { list-style: none; line-height: 1.5em; }
+p { margin: 0 auto; line-height: 1.5em; color:#000; font-size:14px; }
+p.strong {font-weight:bold; color:#5A493F;}
+html { font-size: 100%; }
+.center {text-align:center;}
+.clear {both:clear;}
+p.underline { text-decoration:underline; }
+.left {float:left;}
+.right {float:right; }
+.clear {clear:both;}
 
-root { 
-    display: block;
-}
+	#header-fix { position:fixed; width:100%; height:70px; background:url(../images/bg-transparent.png); }
+	#header-fix a{color:#cecece; text-decoration:none; }
+	#header { color:#fff; }
+	#loginBox{ float:left; margin:5px 10px;}
+	#accountChoice{float:left; margin:5px 10px; }
 
+#global-top { width:95%; margin:0 auto; padding:100px 0px 0px;  }
+#global-top #left-bub {width:289px; float:left; height:385px; background:url(../images/left-bub.png) no-repeat;}
+#global-top #right-bub {width:289px; float:right; height:385px; background:url(../images/right-bub.png) no-repeat;}
+	
+#global { width:960px; margin:0 auto;}
+#content-top { width:961px; height:68px; background:url(../images/bg-content-top.png) no-repeat; position:relative;}
+#content-top h3 {width: 343px; height: 26px; background:url(../images/texte/bourbax-league-h3.png) no-repeat; text-indent:-9999px; position:absolute; top:35px;  left:313px; }
+#content-mid { width:961px; background:url(../images/bg-content-mid.png) repeat-y; }
+#content-mid #text {background:url(../images/bg-text.png) no-repeat 50% 0%;}
+#content-mid  pre{margin:0;}
+#content-bot { width:961px; height:75px; background:url(../images/bg-content-bot.png) no-repeat; }
