@@ -43,7 +43,7 @@ p.underline { text-decoration:underline; }
 #content{ width:961px; margin:0 auto; color:#fff;}
 #content-top {float:left; width:961px; height:68px; background:url(../images/bg-content-top.png) no-repeat; position:relative; z-index:9999;}
 #content-top h3 {width: 343px; height: 26px; background:url(../images/texte/bourbax-league-h3.png) no-repeat; text-indent:-9999px; position:absolute; top:35px;  left:313px; }
-#content-mid {float:left; width:961px; background:url(../images/bg-content-mid.png) repeat-y; position:relative; z-index:9999; }
+#content-mid {float:left; width:961px; background:url(../images/bg-content-mid.png) repeat-y; position:relative; z-index:9999; padding:0 50px; }
 #content-mid #text {background:url(../images/bg-text.png) no-repeat 50% 0%;}
 #content-mid  pre{margin:0;}
 #content-bot {float:left; width:961px; height:75px; background:url(../images/bg-content-bot.png) no-repeat; position:relative; z-index:9999; }
