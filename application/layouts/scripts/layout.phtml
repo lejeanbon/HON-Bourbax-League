@@ -12,7 +12,10 @@
     </head>
     <body>
         <div id="align">
-            <div id="header">
+		
+		  <div id="header-fix">
+			
+				<div id="header">
                 <div id="connexion">
                     <div id="loginBox">
                         <?php
@@ -43,16 +46,57 @@
                 </div>
                 <?php }?>
             </div>
-            <div>
-                <ul>
-                    <li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'news', 'action' => 'index'), 'default', true); ?>">News</a></li>
-                    <li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'gameList', 'action' => 'index'), 'default', true); ?>">Matchs</a></li>
-                    <li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'ladder', 'action' => 'index'), 'default', true); ?>">Ladder</a></li>
-                </ul>
-            </div>
-            <div id="content">
-                <?php echo $this->layout()->content; ?>
-            </div>
+			
+		  </div>
+		  
+		  <div id="global-top">
+			
+				<div id="left-bub">
+				
+					
+				
+				</div>
+				
+				<div id="right-bub">
+				
+					
+				
+				</div>
+				<div class="clear"></div>
+		  </div>
+		  
+		  <div id="global">
+			
+			<div id="content-top">
+			
+				<h3>BOURBAX LEAGUE</h3>
+			
+			</div>
+			
+			<div id="content-mid">
+			
+				<div id="text">
+				
+				  <div>
+						<ul>
+							<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'news', 'action' => 'index'), 'default', true); ?>">News</a></li>
+							<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'gameList', 'action' => 'index'), 'default', true); ?>">Matchs</a></li>
+							<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'ladder', 'action' => 'index'), 'default', true); ?>">Ladder</a></li>
+						</ul>
+				  </div>
+				  <div id="content">
+						<?php echo $this->layout()->content; ?>
+				  </div>
+				  
+				</div>  
+				  
+		  </div>
+		  
+		  <div id="content-bot">
+		  </div>
+		  
+		 </div> 
+		  
         </div>
     </body>
 </html>
