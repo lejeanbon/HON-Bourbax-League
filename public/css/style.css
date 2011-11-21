@@ -49,4 +49,4 @@ p.underline { text-decoration:underline; }
 #content-bot {float:left; width:961px; height:75px; background:url(../images/bg-content-bot.png) no-repeat; position:relative; z-index:9999; }
 
 #bubbles { width:541px; height:669px; background:url(../images/bubbles.png) no-repeat; position:absolute; left:0; z-index:99; }
-#balpha{ width:658px; height:757px; background:url(../images/balpha.png) no-repeat; position:absolute; right:0; z-index:99;	 }
+#balpha{ width:1067px; height:757px; background:url(../images/balpha.png) no-repeat; position:absolute; right:0; z-index:99;	 }
