@@ -30,5 +30,13 @@ class App_Facade_Ecriture {
         $this->dbAccount->save($account);
     }
 
+    public function deleteRegistration($id){
+        $this->dbRegistration->del($id);
+    }
+
+    public function saveRegistration(Application_Model_Registration $registration){
+        $this->dbRegistration->save($registration);
+    }
+
 }
 ?>
