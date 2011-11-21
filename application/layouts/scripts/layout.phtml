@@ -75,33 +75,41 @@
 		  
 		  <div id="global">
 			
-			<div id="content-top">
+			<div id="bubbles"></div>
 			
-				<h3>BOURBAX LEAGUE</h3>
+			<div id="content">
 			
-			</div>
-			
-			<div id="content-mid">
-			
-				<div id="text">
+				<div id="content-top">
 				
-				  <div>
-						<ul>
-							<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'news', 'action' => 'index'), 'default', true); ?>">News</a></li>
-							<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'gameList', 'action' => 'index'), 'default', true); ?>">Matchs</a></li>
-							<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'ladder', 'action' => 'index'), 'default', true); ?>">Ladder</a></li>
-						</ul>
-				  </div>
-				  <div id="content">
-						<?php echo $this->layout()->content; ?>
-				  </div>
-				  
-				</div>  
-				  
-		  </div>
+					<h3>BOURBAX LEAGUE</h3>
+				
+				</div>
+			
+				<div id="content-mid">
+				
+					<div id="text">
+					
+					  <div>
+							<ul>
+								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'news', 'action' => 'index'), 'default', true); ?>">News</a></li>
+								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'gameList', 'action' => 'index'), 'default', true); ?>">Matchs</a></li>
+								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'ladder', 'action' => 'index'), 'default', true); ?>">Ladder</a></li>
+							</ul>
+					  </div>
+					  <div id="content">
+							<?php echo $this->layout()->content; ?>
+					  </div>
+					  
+					</div>  
+					  
+			  </div>
 		  
-		  <div id="content-bot">
-		  </div>
+			  <div id="content-bot">
+			  </div>
+			  
+		   </div>
+		  
+			<div id="balpha"></div>
 		  
 		 </div> 
 		  

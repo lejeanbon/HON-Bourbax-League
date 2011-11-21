@@ -13,7 +13,7 @@
 root { display: block;}
 html, body, h1, h2, h3, h4, ul, li { margin: 0; padding: 0; }
 html {background: url(../images/bg-body.jpg) repeat-x #0C0C0C;}
-body { background: url(../images/bg-body.jpg) repeat-x #0C0C0C; text-align: center; font-family:Tahoma, Geneva, sans-serif; 	 }
+body { background: url(../images/bg-body.jpg) repeat-x #0C0C0C; text-align: center; font-family:Tahoma, Geneva, sans-serif;}
 li { list-style: none; line-height: 1.5em; }
 p { margin: 0 auto; line-height: 1.5em; color:#000; font-size:14px; }
 p.strong {font-weight:bold; color:#5A493F;}
@@ -32,17 +32,21 @@ p.underline { text-decoration:underline; }
 	#accountChoice{float:left; margin:5px 10px; }
 
 #global-top {  width:95%; margin:0 auto; padding:70px 0px 0px;  }
-#global-top #left-bub {width:289px; floa t:left; margin-top:30px; height:385px; background:url(../images/left-bub.png) no-repeat; position:absolute;}
+#global-top #left-bub {width:289px;  margin-top:30px; height:385px; background:url(../images/left-bub.png) no-repeat; position:absolute;}
 
 #mid-global-top {float:left; height:416px; width:100%; background:url(../images/bg-global-top.png) no-repeat center; }
 #mid-global-top h1{ width:393px; text-indent:-9999px; height:360px; background:url(../images/logo.png) no-repeat; margin:0 auto; }
 
-#global-top #right-bub {width:289px; fl oat:right; height:385px; margin-top:30px; background:url(../images/right-bub.png) no-repeat; position:absolute; right:20px; }
+#global-top #right-bub {width:289px;  height:385px; margin-top:30px; background:url(../images/right-bub.png) no-repeat; position:absolute; right:20px; }
 	
-#global { width:960px; margin:0 auto;}
-#content-top { width:961px; height:68px; background:url(../images/bg-content-top.png) no-repeat; position:relative;}
+#global { width:100%; mar gin:0 auto;}
+#content{ width:961px; margin:0 auto;}
+#content-top {float:left; width:961px; height:68px; background:url(../images/bg-content-top.png) no-repeat; position:relative; z-index:9999;}
 #content-top h3 {width: 343px; height: 26px; background:url(../images/texte/bourbax-league-h3.png) no-repeat; text-indent:-9999px; position:absolute; top:35px;  left:313px; }
-#content-mid { width:961px; background:url(../images/bg-content-mid.png) repeat-y; }
+#content-mid {float:left; width:961px; background:url(../images/bg-content-mid.png) repeat-y; position:relative; z-index:9999; }
 #content-mid #text {background:url(../images/bg-text.png) no-repeat 50% 0%;}
 #content-mid  pre{margin:0;}
-#content-bot { width:961px; height:75px; background:url(../images/bg-content-bot.png) no-repeat; }
+#content-bot {float:left; width:961px; height:75px; background:url(../images/bg-content-bot.png) no-repeat; position:relative; z-index:9999; }
+
+#bubbles { width:541px; height:669px; background:url(../images/bubbles.png) no-repeat; position:absolute; left:0; z-index:99; }
+#balpha{ width:658px; height:757px; background:url(../images/balpha.png) no-repeat; position:absolute; right:0; z-index:99;	 }
