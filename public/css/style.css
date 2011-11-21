@@ -32,12 +32,12 @@ p.underline { text-decoration:underline; }
 	#accountChoice{float:left; margin:5px 10px; }
 
 #global-top {  width:95%; margin:0 auto; padding:70px 0px 0px;  }
-#global-top #left-bub {width:289px; float:left; margin-top:30px; height:385px; background:url(../images/left-bub.png) no-repeat;}
+#global-top #left-bub {width:289px; floa t:left; margin-top:30px; height:385px; background:url(../images/left-bub.png) no-repeat; position:absolute;}
 
-#mid-global-top {float:left; height:416px; width:931px; background:url(../images/bg-global-top.png) no-repeat; }
+#mid-global-top {float:left; height:416px; width:100%; background:url(../images/bg-global-top.png) no-repeat center; }
 #mid-global-top h1{ width:393px; text-indent:-9999px; height:360px; background:url(../images/logo.png) no-repeat; margin:0 auto; }
 
-#global-top #right-bub {width:289px; float:right; height:385px; margin-top:30px; background:url(../images/right-bub.png) no-repeat;}
+#global-top #right-bub {width:289px; fl oat:right; height:385px; margin-top:30px; background:url(../images/right-bub.png) no-repeat; position:absolute; right:20px; }
 	
 #global { width:960px; margin:0 auto;}
 #content-top { width:961px; height:68px; background:url(../images/bg-content-top.png) no-repeat; position:relative;}
