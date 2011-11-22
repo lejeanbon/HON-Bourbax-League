@@ -86,16 +86,20 @@
 				</div>
 			
 				<div id="content-mid">
+					
+					<div id="menu">
+					<div>
+							<ul class="menu">
+								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'news', 'action' => 'index'), 'default', true); ?>"><img alt="" title="news" src="images/texte/news.png" /></a></li>
+								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'gameList', 'action' => 'index'), 'default', true); ?>"><img alt="" title="news" src="images/texte/fiche-de-match.png" /></a></li>
+								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'ladder', 'action' => 'index'), 'default', true); ?>"><img alt="" title="news" src="images/texte/ladder.png" /></a></li>
+							</ul>
+					  </div>
+					</div>
 				
 					<div id="text">
 					
-					  <div>
-							<ul>
-								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'news', 'action' => 'index'), 'default', true); ?>">News</a></li>
-								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'gameList', 'action' => 'index'), 'default', true); ?>">Matchs</a></li>
-								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'ladder', 'action' => 'index'), 'default', true); ?>">Ladder</a></li>
-							</ul>
-					  </div>
+					  
 					  <div id="content">
 							<?php echo $this->layout()->content; ?>
 					  </div>
