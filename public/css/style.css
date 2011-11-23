@@ -27,7 +27,10 @@ p.underline { text-decoration:underline; }
 
 	#header-fix { position:fixed; width:100%; height:70px; background:url(../images/bg-transparent.png); z-index:9999; }
 	#header-fix a{color:#cecece; text-decoration:none; }
-	#header { color:#fff; }
+	#header { color:#fff; padding-top:15px;}
+	#connexion{float:left;}
+	#mdp{float:left;}
+	#mdp a {margin:0px 10px; line-height:35px;}
 	#loginBox{ float:left; margin:5px 10px;}
 	#accountChoice{float:left; margin:5px 10px; }
 

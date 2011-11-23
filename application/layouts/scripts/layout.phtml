@@ -28,11 +28,15 @@
                         
                         ?>
                     </div>
+					<?php
+					if( Zend_Auth::getInstance()->hasIdentity()){ ?>
                     <div id="accountChoice">
                         Connecté en tant que :
                         <select id="accountSelect">
                             <?php
+							
                             $accounts = $this->accountList($identifie);
+							
                             foreach ($accounts as $account) {
                                 
                                 if(Zend_Registry::get('Session')->account == $account->getId())
@@ -40,9 +44,10 @@
                                 else
                                     echo '<option value="'.$account->getId().'">'.$account->getName().'</option>';
                             }
-                            ?>
+							?>
                         </select>
                     </div>
+					<?php }?>
                 </div>
                 <?php if( !Zend_Auth::getInstance()->hasIdentity()){ ?>
                 <div id="mdp">
