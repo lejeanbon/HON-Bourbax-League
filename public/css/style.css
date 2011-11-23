@@ -32,6 +32,7 @@ p.underline { text-decoration:underline; }
 	#mdp{float:left;}
 	#mdp a {margin:0px 10px; line-height:35px;}
 	#loginBox{ float:left; margin:5px 10px;}
+	#loginBox a img {vertical-align:middle;}
 	#accountChoice{float:left; margin:5px 10px; }
 
 #global-top {  width:95%; margin:0 auto; padding:70px 0px 0px;  }
