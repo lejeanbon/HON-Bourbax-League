@@ -36,27 +36,32 @@ p.underline { text-decoration:underline; }
 	#accountChoice{float:left; margin:5px 10px; }
 
 #global-top {  width:95%; margin:0 auto; padding:70px 0px 0px;  }
-#global-top #left-bub {width:289px;  margin-top:30px; height:385px; background:url(../images/left-bub.png) no-repeat; position:absolute;}
+#global-top #left-bub {width:289px;  margin-top:30px; height:385px; background:url(../images/left-bub.png) no-repeat; position:absolute; padding-top:10px;}
+#global-top #left-bub h3{width:186px; text-indent:-9999px; height:23px; background:url(../images/texte/sponsors.png) no-repeat; margin:0 auto;}
 
 #mid-global-top {float:left; height:416px; width:100%; background:url(../images/bg-global-top.png) no-repeat center; }
-#mid-global-top h1{ width:393px; text-indent:-9999px; height:360px; background:url(../images/logo.png) no-repeat; margin:0 auto; }
+#mid-global-top h1{ width:393px; text-indent:-9999px; height:23px; background:url(../images/logo.png) no-repeat; margin:0 auto; }
 
-#global-top #right-bub {width:289px;  height:385px; margin-top:30px; background:url(../images/right-bub.png) no-repeat; position:absolute; right:20px; }
+#global-top #right-bub {width:289px;  height:385px; margin-top:30px; background:url(../images/right-bub.png) no-repeat; position:absolute; right:20px; padding-top:10px;}
 	
 #global { width:100%; mar gin:0 auto;}
-#content{ width:961px; margin:0 auto; color:#fff; padding:0 20px;}
+
+#content{ width:961px; margin:0 auto; color:#fff; }
+#content #content-mid #content table { width:95%; margin:0 auto; }
+
+
 #content-top {float:left; width:961px; height:68px; background:url(../images/bg-content-top.png) no-repeat; position:relative; z-index:999;}
 #content-top h3 {width: 343px; height: 26px; background:url(../images/texte/bourbax-league-h3.png) no-repeat; text-indent:-9999px; position:absolute; top:35px;  left:313px; }
 #content-mid {float:left; width:961px; background:url(../images/bg-content-mid.png) repeat-y; position:relative; z-index:999; padding-top:20px; }
-#content-mid #text {background:url(../images/bg-text.png) no-repeat 50% 0%; min-height:685px;}
+#content-mid #text {background:url(../images/bg-text.png) no-repeat 50% 0%; min-height:677px;}
 #content-mid  pre{margin:0;}
 
 #content-mid  #menu{ width:885px; height:48px; background:url(../images/bg-menu.png) no-repeat; margin:0 auto; padding-bottom:20px; }
 #content-mid  #menu ul.menu{ width:705px; margin:0 auto; height:48px; }
-#content-mid  #menu ul.menu li{ float:left; line-height:50px; }
-#content-mid  #menu ul.menu li a{ text-decoration:none; text-align:center; margin:0 60px;}
+#content-mid  #menu ul.menu li{ float:left; line-height:47px; }
+#content-mid  #menu ul.menu li a{ text-decoration:none; text-align:center; margin:0 60px; color:#fff; font-size:20px; font-variant:small-caps;}
 
-#content-bot {float:left; width:961px; height:75px; background:url(../images/bg-content-bot.png) no-repeat; position:relative; z-index:999; }
+#content-bot {float:left; width:961px; height:74px; background:url(../images/bg-content-bot.png) no-repeat; position:relative; z-index:999; }
 
 #bubbles { width:541px; height:669px; background:url(../images/bubbles.png) no-repeat; position:absolute; left:0; z-index:99; }
 #balpha{ width:1067px; height:757px; background:url(../images/balpha.png) no-repeat; position:absolute; right:0; z-index:99;	 }
