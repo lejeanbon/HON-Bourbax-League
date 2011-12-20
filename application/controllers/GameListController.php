@@ -1,26 +1,24 @@
 <?php
 
-class GameListController extends App_Controller_Hon
-{
+class GameListController extends App_Controller_Hon{
 
-    public function init()
-    {
-        /* Initialize action controller here */
-    }
-
-    public function indexAction()
-    {
+    public function indexAction(){
         $auth = Zend_Auth::getInstance();
         $user = $this->lecture->getUserByName($auth->getIdentity()->username);
         $accounts = $this->lecture->getAccountsByUser($user);
         $games = array();
+        $gamesID = array();
         foreach ($accounts as $account) {
             $myGames = $this->lecture->getGamesByAccount($account);
-            foreach ($myGames as $g) {
-                $games[] = $g;
+            foreach ($myGames as $g){
+                $gam = $g->getGame();
+                $gamesID[] = $gam['gid'];
             }
+                //$games[] = $g;
         }
-        $this->view->games = $games;
+        $xml = new App_Xml_XmlServices();
+        $xml->getMatchsStats($gamesID);
+        //$this->view->games = $games;
     }
 
 

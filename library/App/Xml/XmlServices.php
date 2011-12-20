@@ -3,10 +3,21 @@ class App_Xml_XmlServices {
 
     private $nickToId = "http://xml.heroesofnewerth.com/xml_requester.php?f=nick2id&opt=nick&nick[]=";
     private $matchStat = "http://xml.heroesofnewerth.com/xml_requester.php?f=match_stats&opt=mid&mid[]=";
+    private $matchsStat = "http://xml.heroesofnewerth.com/xml_requester.php?f=match_stats&opt=mid";
 
     public function getIdFromNickname($nickname){
         $parser = simplexml_load_file($this->nickToId.$nickname);
         return (string)$parser->accounts->account_id;
+    }
+
+    public function getMatchsStats($matchsId){
+        $idList = "";
+        foreach($matchsId as $match){
+            $idList .= "&mid[]=".$match;
+        }
+        var_dump($this->matchsStat.$idList);die;
+        $parser = simplexml_load_file($this->matchsStat.$idList);
+        var_dump($parser);
     }
 
     public function getMatchStats($gameId){
