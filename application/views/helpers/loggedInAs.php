@@ -7,7 +7,7 @@ class Zend_View_Helper_LoggedInAs extends Zend_View_Helper_Abstract
         if ($auth->hasIdentity()) {
             $logoutUrl = $this->view->url(array('controller'=>'auth',
                 'action'=>'logout'), null, true);
-            return 'Bienvenue '.$auth->getIdentity()->username.', <a href="'.$logoutUrl.'">Déconnection</a>';
+            return 'Bienvenue '.$auth->getIdentity()->username.', <a href="'.$logoutUrl.'"><img title="Déconnection" alt="Déconnection" src="images/icone/deconnexion.png" /></a>';
         }
         $request = Zend_Controller_Front::getInstance()->getRequest();
         $controller = $request->getControllerName();

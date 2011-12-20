@@ -12,7 +12,10 @@
     </head>
     <body>
         <div id="align">
-            <div id="header">
+		
+		  <div id="header-fix">
+			
+				<div id="header">
                 <div id="connexion">
                     <div id="loginBox">
                         <?php
@@ -25,11 +28,15 @@
                         
                         ?>
                     </div>
+					<?php
+					if( Zend_Auth::getInstance()->hasIdentity()){ ?>
                     <div id="accountChoice">
                         Connecté en tant que :
                         <select id="accountSelect">
                             <?php
+							
                             $accounts = $this->accountList($identifie);
+							
                             foreach ($accounts as $account) {
                                 
                                 if(Zend_Registry::get('Session')->account == $account->getId())
@@ -37,9 +44,10 @@
                                 else
                                     echo '<option value="'.$account->getId().'">'.$account->getName().'</option>';
                             }
-                            ?>
+							?>
                         </select>
                     </div>
+					<?php }?>
                 </div>
                 <?php if( !Zend_Auth::getInstance()->hasIdentity()){ ?>
                 <div id="mdp">
@@ -48,16 +56,74 @@
                 </div>
                 <?php }?>
             </div>
-            <div>
-                <ul>
-                    <li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'news', 'action' => 'index'), 'default', true); ?>">News</a></li>
-                    <li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'gameList', 'action' => 'index'), 'default', true); ?>">Matchs</a></li>
-                    <li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'ladder', 'action' => 'index'), 'default', true); ?>">Ladder</a></li>
-                </ul>
-            </div>
-            <div id="content">
-                <?php echo $this->layout()->content; ?>
-            </div>
+			
+		  </div>
+		  
+		  <div id="global-top">
+			
+				<div id="left-bub">
+				
+					<h3>Sponsors</h3>
+				
+				</div>
+				
+				<div id="mid-global-top">
+				
+					<h1>Hon Bourbax-league, IH Heroes of newerst France</h1>
+				
+				</div>
+				
+				
+				<div id="right-bub">
+				</div>
+				
+				<div class="clear"></div>
+		  </div>
+		  
+		  <div id="global">
+			
+			<div id="bubbles"></div>
+			
+			<div id="content">
+			
+				<div id="content-top">
+				
+					<h3>BOURBAX LEAGUE</h3>
+				
+				</div>
+			
+				<div id="content-mid">
+					
+					<div id="menu">
+					<div>
+							<ul class="menu">
+								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'news', 'action' => 'index'), 'default', true); ?>"><img alt="news" title="news" src="images/texte/news.png" /></a></li>
+								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'gameList', 'action' => 'index'), 'default', true); ?>"><img alt="fiche de match" title="fiche de match" src="images/texte/fiche-de-match.png" /></a></li>
+								<li><a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'ladder', 'action' => 'index'), 'default', true); ?>"><img alt="ladder" title="ladder" src="images/texte/ladder.png" /></a></li>
+							</ul>
+					  </div>
+					</div>
+				
+					<div id="text">
+					
+					  
+					  <div id="content">
+							<?php echo $this->layout()->content; ?>
+					  </div>
+					  
+					</div>  
+					  
+			  </div>
+		  
+			  <div id="content-bot">
+			  </div>
+			  
+		   </div>
+		  
+			<div id="balpha"></div>
+		  
+		 </div> 
+		  
         </div>
     </body>
 </html>
