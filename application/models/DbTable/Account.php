@@ -20,7 +20,8 @@ class Application_Model_DbTable_Account extends Zend_Db_Table_Abstract
         }
         $row = $result->current();
         return new Application_Model_Account($row->id, $row->name, $row->aid, $row->elo,
-                                             $row->user, $row->kill, $row->death, $row->assist);
+                                             $row->user, $row->kill, $row->death, $row->assist,
+                                             $row->victory, $row->defeat);
     }
 
     public function getAllByUser(Application_Model_User $user){
@@ -28,7 +29,8 @@ class Application_Model_DbTable_Account extends Zend_Db_Table_Abstract
         $entries = array();
         foreach ($result as $row) {
             $entries[] = new Application_Model_Account($row['id'], $row['name'], $row['aid'], $row['elo'], 
-                                                       $row['user'], $row['kill'], $row['death'], $row['assist']);
+                                                       $row['user'], $row['kill'], $row['death'], $row['assist'],
+                                                       $row['victory'], $row['defeat']);
         }
         return $entries;
     }
@@ -42,7 +44,9 @@ class Application_Model_DbTable_Account extends Zend_Db_Table_Abstract
                     'user' => $account->getUser(),
                     'kill' => $account->getKill(),
                     'death' => $account->getDeath(),
-                    'assist' => $account->getAssist()
+                    'assist' => $account->getAssist(),
+                    'victory' => $account->getVictory(),
+                    'defeat' => $account->getDefeat()
                 );
 
         if (null === ($id = $account->getId())) {
@@ -59,9 +63,18 @@ class Application_Model_DbTable_Account extends Zend_Db_Table_Abstract
         $entries = array();
         foreach ($result as $row) {
             $entries[] = new Application_Model_Account($row['id'], $row['name'], $row['aid'], $row['elo'],
-                                                       $row['user'], $row['kill'], $row['death'], $row['assist']);
+                                                       $row['user'], $row['kill'], $row['death'], $row['assist'],
+                                                       $row['victory'], $row['defeat']);
         }
         return $entries; 
+    }
+
+    public function getAccountByAid($aid){
+        $res = $this->fetchAll(array('aid = ?' => $aid));
+        $row = $res->current(); //que 1 row
+        return new Application_Model_Account($row['id'], $row['name'], $row['aid'], $row['elo'],
+                                             $row['user'], $row['kill'], $row['death'], $row['assist'],
+                                             $row['victory'], $row['defeat']);
     }
 
 }

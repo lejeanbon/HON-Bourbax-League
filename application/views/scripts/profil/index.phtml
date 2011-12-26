@@ -1,0 +1,12 @@
+<?php $nbGame = $this->account->getVictory()+$this->account->getDefeat();?>
+<h3><?php echo $this->account->getName(); ?> - <?php echo $this->account->getElo(); ?></h3>
+<table>
+    <tr><td>Nombre de parties</td><td><?php echo $nbGame; ?></td></tr>
+    <tr><td>Victoires</td><td><?php echo $this->account->getVictory(); ?> (<?php if($nbGame == 0) echo '0'; else echo $this->account->getVictory()/$nbGame*100; ?>%)</td></tr>
+    <tr><td>Défaites</td><td><?php echo $this->account->getDefeat(); ?> (<?php if($nbGame == 0) echo '0'; else echo $this->account->getDefeat()/$nbGame*100; ?>%)</td></tr>
+    <tr><td>KDR</td><td><?php if($nbGame == 0) echo '0'; else echo round($this->stats['kill']/$nbGame/$this->stats['death'], 2); ?>:1</td></tr>
+    <tr><td>ADR</td><td><?php if($nbGame == 0) echo '0'; else echo round($this->stats['assist']/$nbGame/$this->stats['death'], 2); ?>:1</td></tr>
+    <tr><td>XPM</td><td><?php if($nbGame == 0) echo '0'; else echo $this->stats['xpm']/$nbGame; ?></td></tr>
+    <tr><td>GPM</td><td><?php if($nbGame == 0) echo '0'; else echo $this->stats['gpm']/$nbGame; ?></td></tr>
+    <tr><td>APM</td><td><?php if($nbGame == 0) echo '0'; else echo $this->stats['apm']/$nbGame; ?></td></tr>
+</table>

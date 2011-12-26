@@ -46,7 +46,8 @@
                             }
 							?>
                         </select>
-                    </div>
+                        <a href="<?php echo $this->baseUrl().$this->url(array('controller' => 'profil', 'action' => 'index'), 'default', true); ?>">Mon profil</a>
+                    </div> 
 					<?php }?>
                 </div>
                 <?php if( !Zend_Auth::getInstance()->hasIdentity()){ ?>

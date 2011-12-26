@@ -38,5 +38,13 @@ class App_Facade_Ecriture {
         $this->dbRegistration->save($registration);
     }
 
+    public function saveGame(Application_Model_Game $game){
+        $this->dbGame->save($game);
+    }
+
+    public function saveGameResult(Application_Model_GameResult $gameResult){
+        $this->dbGameResult->save($gameResult);
+    }
+
 }
 ?>

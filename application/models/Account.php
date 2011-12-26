@@ -13,7 +13,7 @@ class Application_Model_Account{
     private $victory;
     private $defeat;
 
-    public function  __construct($id, $name, $aid, $elo, $userId, $kill, $death, $assist) {
+    public function  __construct($id, $name, $aid, $elo, $userId, $kill, $death, $assist, $victory, $defeat) {
         $this->id = $id;
         $this->name = $name;
         $this->aid = $aid;
@@ -22,6 +22,8 @@ class Application_Model_Account{
         $this->kill = $kill;
         $this->death = $death;
         $this->assist = $assist;
+        $this->victory = $victory;
+        $this->defeat = $defeat;
     }
 
     public function getId(){
@@ -70,6 +72,30 @@ class Application_Model_Account{
 
     public function setDefeat($nb){
         $this->defeat = $nb;
+    }
+
+    public function addElo($elo){
+        $this->elo += $elo;
+    }
+
+    public function addVictory(){
+        $this->victory++;
+    }
+
+    public function addDefeat(){
+        $this->defeat++;
+    }
+
+    public function addKill($kill){
+        $this->kill += $kill;
+    }
+
+    public function addDeath($death){
+        $this->death += $death;
+    }
+
+    public function addAssist($assist){
+        $this->assist += $assist;
     }
 }
 

@@ -2,7 +2,7 @@
     <tr><th>Rang</th><th>Joueur</th><th>Elo</th><th>Victoires</th><th>Défaites</th></tr>
     <?php
     foreach ($this->accounts as $id => $account) {
-        echo '<tr><td>'.($id+1).'</td><td>'.$account->getName().'</td><td>'.$account->getElo().'</td>';
+        echo '<tr><td>'.($id+1).'</td><td><a href="'.$this->baseUrl().$this->url(array('controller' => 'profil', 'action' => 'index', 'id' => $account->getId()), 'default', true).'">'.$account->getName().'</a></td><td>'.$account->getElo().'</td>';
         echo '<td>'.$account->getVictory().'</td><td>'.$account->getDefeat().'</td></tr>';
     }
     ?>

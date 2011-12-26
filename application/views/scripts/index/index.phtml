@@ -1,4 +1,11 @@
-<h1><?php if(!empty($this->registrations)){$first = $this->registrations[0]; echo $first->getGame()->getName();} ?></h1>
+<h1>Partie en cours</h1>
+<?php if(!empty($this->gameEnCours))
+        echo '<h3>'.$this->gameEnCours->getName().'</h3><a href="'.$this->baseUrl().$this->url(array('controller' => 'index', 'action' => 'gameFinished', 'g' => $this->gameEnCours->getId()), 'default', true).'">Partie terminée</a>';
+      else
+          echo 'aucune partie en cours';
+?>
+<h1>Inscription à une partie</h1>
+<h3><?php if(!empty($this->registrations)){$first = $this->registrations[0]; echo $first->getGame()->getName();} ?></h3>
 <table>
     <?php
     if(isset($this->registrationError))

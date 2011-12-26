@@ -22,9 +22,22 @@ class App_Xml_XmlServices {
 
     public function getMatchStats($gameId){
         $parser = simplexml_load_file($this->matchStat.$gameId);
+        if(empty ($parser->stats->match))
+            return null;
         $base = $parser->stats->match;
         $match = $base->match_stats;
         $summ = $base->summ;
+        $teams = array();
+        $teams['1'] = '1';
+        $teams['2'] = '1';
+        foreach($base->team as $team){
+            foreach($team->stat as $st){
+                if($st['name'] == 'tm_wins'){
+                    if($st == 0)
+                        $teams[(string)$team['side']] = (string)$st;
+                }
+            }
+        }
         $time = 0;
         $game_result['player_stats'] = array();
         $game_result['game_stats'] = array();
@@ -46,12 +59,15 @@ class App_Xml_XmlServices {
             $id = $ms['aid'];
             $game_result['player_stats']['pid_'.$id] = array();
             $game_result['player_stats']['pid_'.$id]['hero'] = (string)$ms['cli_name'];
+            
             foreach($ms->stat as $stat){
+                if($stat['name'] == 'team')
+                    $game_result['player_stats']['pid_'.$id]['win'] = $teams[(string)$stat];
                 if($stat['name'] == 'herokills')
                     $game_result['player_stats']['pid_'.$id]['herokills'] = (string)$stat;
                 if($stat['name'] == 'deaths')
                     $game_result['player_stats']['pid_'.$id]['deaths'] = (string)$stat;
-                if($stat['name'] == 'herokills')
+                if($stat['name'] == 'heroassists')
                     $game_result['player_stats']['pid_'.$id]['heroassists'] = (string)$stat;
                 if($stat['name'] == 'hero_id')
                     $game_result['player_stats']['pid_'.$id]['hero_img'] = (string)$stat;
@@ -82,6 +98,17 @@ class App_Xml_XmlServices {
         $base = $parser->stats->match;
         $match = $base->match_stats;
         $summ = $base->summ;
+                $teams = array();
+        $teams['1'] = '1';
+        $teams['2'] = '1';
+        foreach($base->team as $team){
+            foreach($team->stat as $st){
+                if($st['name'] == 'tm_wins'){
+                    if($st == 0)
+                        $teams[(string)$team['side']] = (string)$st;
+                }
+            }
+        }
         $time = 0;
         $game_result['player_stats'] = array();
         $game_result['game_stats'] = array();
@@ -105,11 +132,13 @@ class App_Xml_XmlServices {
             $game_result['player_stats']['pid_'.$id]['hero'] = (string)$ms['cli_name'];
             $game_result['player_stats']['pid_'.$id]['id'] = $id;
             foreach($ms->stat as $stat){
+                if($stat['name'] == 'team')
+                    $game_result['player_stats']['pid_'.$id]['win'] = $teams[(string)$stat];
                 if($stat['name'] == 'herokills')
                     $game_result['player_stats']['pid_'.$id]['herokills'] = (string)$stat;
                 if($stat['name'] == 'deaths')
                     $game_result['player_stats']['pid_'.$id]['deaths'] = (string)$stat;
-                if($stat['name'] == 'herokills')
+                if($stat['name'] == 'heroassists')
                     $game_result['player_stats']['pid_'.$id]['heroassists'] = (string)$stat;
                 if($stat['name'] == 'hero_id')
                     $game_result['player_stats']['pid_'.$id]['hero_img'] = (string)$stat;
